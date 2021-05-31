@@ -1,0 +1,54 @@
+{
+	"name": "my-portfolio",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"start": "nuxt start",
+		"generate": "nuxt generate",
+		"lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore .",
+		"test": "jest",
+		"test:watch": "jest --watchAll",
+		"test:coverage": "jest --collectCoverage"
+	},
+	"dependencies": {
+		"@nuxtjs/pwa": "3.3.5",
+		"@nuxtjs/robots": "2.5.0",
+		"@nuxtjs/sitemap": "2.4.0",
+		"core-js": "3.13.1",
+		"nuxt": "2.15.6",
+		"nuxt-i18n": "6.27.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "12.1.4",
+		"@commitlint/config-conventional": "12.1.4",
+		"@nuxt/types": "2.15.6",
+		"@nuxt/typescript-build": "2.1.0",
+		"@nuxtjs/date-fns": "1.5.0",
+		"@nuxtjs/eslint-config-typescript": "6.0.1",
+		"@nuxtjs/eslint-module": "3.0.2",
+		"@types/jest": "26.0.23",
+		"@vue/test-utils": "1.2.0",
+		"axe-core": "4.2.1",
+		"babel-core": "7.0.0-bridge.0",
+		"babel-eslint": "10.1.0",
+		"babel-jest": "27.0.2",
+		"eslint": "7.27.0",
+		"eslint-plugin-nuxt": "2.0.0",
+		"eslint-plugin-vue": "7.10.0",
+		"husky": "4.3.8",
+		"jest": "27.0.3",
+		"lint-staged": "11.0.0",
+		"nuxt-windicss": "0.8.2",
+		"ts-jest": "27.0.1",
+		"vue-axe": "2.4.4",
+		"vue-jest": "3.0.7"
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-commit": "lint-staged"
+		}
+	}
+}
